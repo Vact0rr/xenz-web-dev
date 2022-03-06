@@ -13,18 +13,16 @@ html {
   position: relative;
 }
 .bgimg {
-  background-image: url("/img/production_office.png");
-  /* min-height: 100%; */
   height: 100%;
   background-position: center;
   background-size: cover;
 }
-.video {
+#bg-video {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -38,6 +36,12 @@ html {
   color: #ffffff;
   text-align: center;
   padding: 1rem;
+}
+
+@media (max-width: 750px) {
+  .main-container {
+    margin-left: 1rem;
+  }
 }
 .header {
   font-size: 4rem;
